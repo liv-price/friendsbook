@@ -24,7 +24,7 @@ export default function Login() {
         <div className="loginLeft">
           <h3 className="loginLogo">Friendsbook</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on friendsbook.
+            Connect with friends and the world around you on Friendsbook.
           </span>
         </div>
         <div className="loginRight">
