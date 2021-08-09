@@ -23,7 +23,7 @@ export default function Sidebar() {
           
           <li className="sidebarListItem">
             {/* <GitHubIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText"><a href="https://github.com/NK-codeman0001/friendsbook">Source Code</a></span>
+            <span className="sidebarListItemText"><a href="https://github.com/liv-price/friendsbook">Source Code</a></span>
           </li>
           <li className="sidebarListItem">
             {/* <ExitToAppIcon className="sidebarIcon" /> */}
