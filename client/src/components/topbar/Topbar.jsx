@@ -1,10 +1,18 @@
 import "./topbar.css";
 import {  Person, } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+import { Link , useHistory } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
+
 export default function Topbar() {
+
+  const history=useHistory();
+
+  function logOut(){
+    localStorage.clear();
+    history.push('/login');
+  }
   const { user } = useContext(AuthContext);
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
@@ -23,9 +31,11 @@ export default function Topbar() {
           <Link to="/" style={{ textDecoration: "none"}}>
             <button className="topbarLink">Homepage</button>
           </Link>
-          <Link to="/" style={{ textDecoration: "none"}}>
-            <button className="topbarLinklog">Log Out</button>
-          </Link>
+         
+            <span className="topbarLinklog" ><a href="/login" style={{textDecoration:'none',  color:"white",}} onClick={logOut}>LogOut</a></span>
+         {/* <Link href="/login" style={{ textDecoration: "none"}}>
+            <button className="topbarLinklog"  onClick={logOut}>Log Out</button>
+          </Link> */}
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
