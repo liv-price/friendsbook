@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    width: 100%;
+}
+.main1{
+    width: 25%;
+}
+.main2{
+    padding: 30px;
+}
+
+.postProfileImg {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .postUsername {
+    font-size: 24px;
+    font-weight: 500;
+}
