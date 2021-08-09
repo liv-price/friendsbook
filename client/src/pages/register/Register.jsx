@@ -36,7 +36,7 @@ export default function Register() {
         <div className="loginLeft">
           <h3 className="loginLogo">Friendsbook</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Lamasocial.
+            Connect with friends and the world around you on friendsbook.
           </span>
         </div>
         <div className="loginRight">
@@ -63,7 +63,7 @@ export default function Register() {
               minLength="6"
             />
             <input
-              placeholder="Password Again"
+              placeholder="Confirm Password"
               required
               ref={passwordAgain}
               className="loginInput"
