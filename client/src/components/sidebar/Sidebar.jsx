@@ -1,7 +1,15 @@
+  
 import "./sidebar.css";
-
+import {useHistory } from "react-router-dom";
 
 export default function Sidebar() {
+const history=useHistory();
+
+function logOut(){
+	localStorage.clear();
+	history.push('/login');
+}
+
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
@@ -27,7 +35,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarListItem">
             {/* <ExitToAppIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText"><a href="/logout">Log Out</a></span>
+            <span className="sidebarListItemText"><a href="/login" onClick={logOut}  >Log Out</a></span>
           </li>
         </ul>
         
